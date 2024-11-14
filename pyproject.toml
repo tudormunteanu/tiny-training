@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tiny-training"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "tiny_training"}]
+
+[tool.poetry.dependencies]
+python = "3.11.8"
+transformers = "^4.46.2"
+torch = "^2.5.1"
+datasets = "^3.1.0"
+tqdm = "^4.67.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
